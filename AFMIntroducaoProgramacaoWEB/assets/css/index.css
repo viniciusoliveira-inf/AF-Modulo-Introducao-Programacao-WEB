@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+	border: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #475569;
+}
+body {
+    background-color: #949091;
+    background-image: url(../img/backgroud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:luminosity;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+main {
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+}
+.center{
+    text-align: center;
+    background-color: #fff;
+    width:100%;
+    display: inline-block;
+    top: 50%;
+    transform:translateY(-50%);
+    position: relative;
+    box-shadow: 1px 1px 2px #555;
+    padding: 80px 0;
+}
+h2{
+    margin-bottom: 40px;
+}
+form input{
+    display: inline-block;
+    width: 70%;
+    padding: 10px;
+    box-shadow: 1px 1px 2px #555;
+    margin-bottom: 12px;
+    background-color: #efefef;
+}
+#botao_entrar {
+    width: 50%;
+    margin-top: 35px;
+    font-weight: 600;
+    background-color: #a09f9f;
+}
+#botao_entrar:hover{
+    cursor: pointer;
+}
+form p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+form p a{
+    text-decoration: none;
+    font-weight: 250;
+}
+form p a span{
+    font-weight: 700;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/recados.css">
+    <title>Meus Recados</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="nav-logo">Bem vindo  </span><span id="nome_do_usuario" style="text-transform: uppercase;"></span> !</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a type="button" id="botao-sair" href="#" class="nav-link">SAIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="entrada-dados">
+            <form id="form-recados" action="cadastrarRecado">
+                <input type="hidden" name="numero_recado" id="numero_recado">
+				<input type="text" name="descricao" id="input-descricao" placeholder="Insira aqui o seu recado">
+				<input type="text" name="detalhamento" id="input-detalhamento" placeholder="Detalhe seu recado aqui">
+                <input type="button" id="botao-cadastrar" value="CADASTRAR">
+                <input type="button" id="botao-cancelar" value="CANCELAR" style="visibility: hidden;">
+            </form>
+        </div>
+        <div class="informacoes">
+            <table id="tabela-dados">
+                <thead>
+                    <tr id="cabecalho-tabela">
+                        <th class="col1">#</th>
+                        <th class="col2">Descrição</th>
+						<th class="col3">Detalhamento</th>
+                        <th class="col4">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="recados">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="assets/js/recados.js"></script>
+</body>
+</html>
